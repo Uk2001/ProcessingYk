@@ -49,6 +49,8 @@ void setup() {
   for (int i = 0; i < vertexNum; i++) {
     Xd[i] = width/3 + 250*cos((2*PI/vertexNum)*i);
     Yd[i] = height/2 + 250*sin((2*PI/vertexNum)*i);
+    omega[i] = 0.2 + random(0,0.2);
+    mu[i] = 0.2 + 0.02*i;
   }
 }
 
